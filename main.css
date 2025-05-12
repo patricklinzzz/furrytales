@@ -62,3 +62,24 @@ main {
     text-align: center;
     
 }
+
+.trending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.products {
+    /* border: 1px solid; */
+    /* padding: 5px; */
+    width: 20%;
+}
+.products img {
+    width: 100%;
+}
+.products:nth-child(1) {
+    width: 31%;
+    margin-right: -5%;
+}
