@@ -43,7 +43,7 @@ header {
     gap: 10%;
     list-style: none;
     padding: 0 25px;
-    background-color: #A47864;
+    background-color: #957b4a;
     border-radius: 10px;
     height: 43px;
     width: 45%;
@@ -55,7 +55,7 @@ header {
     text-decoration: none;
 }
 .member {
-    background-color: #A47864;
+    background-color: #957b4a;
     display: flex;
     border-radius: 30px;
     gap: 20px;
@@ -79,12 +79,12 @@ header {
     cursor: pointer;
     padding: 0.5rem;
     border-radius: 0.375rem;
-    border: 2px solid #A47864;
+    border: 2px solid #957b4a;
 }
 .hamburger-menu .bar2 {
     width: 25px;
     height: 3px;
-    background-color: #A47864;
+    background-color: #957b4a;
     margin: 3px 0; /* 線條間距 */
     transition: all 0.3s ease-in-out; /* 動畫效果 */
 }
@@ -98,7 +98,7 @@ header {
         left: 35%;
         padding:10px;
         width: 20%;
-        background-color: #A47864;
+        background-color: #957b4a;
         border-radius:0 0 25px 25px;
         margin: 5px;
         height: 150px;
