@@ -60,7 +60,7 @@ window.addEventListener('load', () => {
     document.head.appendChild(styleSheet);
 
     // --- 設定動畫持續時間 (這部分與之前相同) ---
-    const desiredSpeedPixelsPerSecond = 300; // 每秒滾動40像素
+    const desiredSpeedPixelsPerSecond = 40; // 每秒滾動40像素
     let animationDurationSeconds = totalScrollDistance / desiredSpeedPixelsPerSecond;
 
     if (animationDurationSeconds <= 0 || !isFinite(animationDurationSeconds)) {
