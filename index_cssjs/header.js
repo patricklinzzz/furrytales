@@ -44,10 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const nowScroll =document.documentElement.scrollTop
         if(nowScroll<preScroll){
             header.style.transform="none"
-            header.style.backgroundColor="#DEE4E9"
         }else if(nowScroll>preScroll){
-            header.style.transform="translateY(-50%)"
-            header.style.backgroundColor="#fff0"
+            header.style.transform="translateY(-65%)"
         }
         preScroll=nowScroll
     })

@@ -74,27 +74,22 @@ const news = document.querySelector('.news')
 const news_bar = document.querySelector('.news_bar')
 const news_width = news.clientWidth
 const news_bar_width = news_bar.clientWidth
-console.log(news_width)
-console.log(news_bar_width)
 let newMargin=0
 left.addEventListener('mousedown',()=>{
     if (news_bar_width<=news_width + newMargin){
         let currentMargin = parseInt(news.style.marginLeft) || 0;
         newMargin = currentMargin - 250;
         news.style.marginLeft = newMargin + 'px';
-        console.log("Current marginLeft:", newMargin,news_width);
     }
     })
     right.addEventListener('mousedown',()=>{
     if (newMargin<=-1){
         newMargin += 250;
         news.style.marginLeft = newMargin + 'px';
-        console.log("Current marginLeft:", newMargin,news_width);
     }
 })
 // 門市服務項目動畫
 const touch = document.getElementsByClassName('loader');
-console.log(touch)
 const touch_box = document.getElementsByClassName('loader_box');
 const touch_pic = document. getElementsByClassName('pic');
 const instore_serviceBG = document.querySelector('.instore_service')
