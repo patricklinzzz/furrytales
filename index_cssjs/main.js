@@ -106,7 +106,7 @@ for(let i=0;i<touch.length;i++){
         touch_picElement.style.transform='scale(1.5)'
         touch_boxElement.style.transform='scale(0.8)'
         instore_serviceBG.style.backgroundImage=
-        'url("/pic/service/dogsee'+(i+1)+'.png")'
+        'url("../pic/service/dogsee'+(i+1)+'.png")'
         service_title.textContent=arr[i]
         service_title.style.opacity=1
     });
@@ -115,7 +115,7 @@ for(let i=0;i<touch.length;i++){
         touchElement.style.borderColor='#dcdbdb'
         touch_picElement.style.transform='scale(1)'
         touch_boxElement.style.transform='scale(1)'
-        instore_serviceBG.style.backgroundImage='url("/pic/service/dog.png")'
+        instore_serviceBG.style.backgroundImage='url("../pic/service/dog.png")'
         service_title.textContent=""
         service_title.style.opacity=0
     });
