@@ -12,13 +12,12 @@ main {
 .carousel-wrapper {
     width: 100%;
     margin: 20px 0 150px 0;
-    padding: 10px;
-    background-color:#DF8CAD;
+    padding: 8px;
+    background-color:#DAD8D9;
     box-shadow: 20px 20px 10px  rgba(0,0,0,0.5);
 }
 
 .carousel-container {
-    width: 100%; 
     overflow: hidden;
     border: 3px solid #ccc;
     background-color: #fff;
@@ -36,12 +35,73 @@ main {
 }
 
 /* 熱門商品 */
+.trending {
+    position: relative;
+}
 .trending_title {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
+.products_box{
+    margin: 20% 30px 0 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+h5{
+    margin: 0;
+}
+.products_box > h5,h1 {
+    width: fit-content;
+    margin: 0;
+    background-color: #ffffffb2;
+}
+.products_box > h5 {
+    width: 50%;
+}
+.products_box > button {
+    width: 25%;
+    background-color: pink;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
 .products_list {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.product {
+    display: flex;
+    width: 45%;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px;
+    position: relative;
+    background-color: #fff;
+}
+.product > img {
+    position: absolute;
+    top:-15px;
+    left:-5px
+}
+.details {
+    padding-left: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.McAdams_pic {
+    position: absolute;
+    top: 20%;
+    right: 6%;
+    z-index: -1;
+    box-shadow:10px 10px 15px #000;
+}
+/* .products_list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +115,7 @@ main {
     flex-direction: column;
     width: 180px;
     padding-right: 20px;
-    border-right: #ccc solid;
+    border-right: #fff solid;
 }
 .product:nth-child(odd) {
     margin-bottom: -100px;
@@ -86,7 +146,7 @@ main {
     color: #000;
     text-decoration: none;
     text-align: center;
-}
+} */
 /* Ad  */
 .ad {
     display: flex;
@@ -101,6 +161,7 @@ main {
     height: 40vw;
 }
 .ad_products {
+    border: #000 solid;
     background-color: #fff;
     width: 60vw;
     height: 25vw;
@@ -139,8 +200,7 @@ main {
     color: #000;
     z-index: 99;
     cursor: pointer;
-    background-color: #95CEE8;
-    border: 2px solid #33657b;
+    background-color: #FFC0CB;
 }
 .news_bar {
     margin-top: 20px;
@@ -196,7 +256,7 @@ main {
     line-height: 30px;
 }
 .instore {
-    margin: 40px 0;
+    margin: 180px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,7 +306,7 @@ main {
 }
 /* 門市服務項目動畫 */
 .loader_box {
-    transition: transform 0.5s linear;
+    transition: transform 0.8s linear;
     z-index: 2;
     display:flex;
     position: relative;
@@ -265,7 +325,7 @@ main {
 }
 .pic {
     width: 110px;
-    transition: transform 0.5s linear;
+    transition: transform 0.8   s linear;
     overflow: hidden;
 }
 @keyframes rotateClockwise {
