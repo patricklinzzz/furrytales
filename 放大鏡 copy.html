@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+        .container {
+            width: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+        .mirror  {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .container img {
+            display: block;
+            /* width: 500px; */
+        }
+        .mirror img {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="pic/headerPic4.jpg" width="100%">
+        <div class="mirror">
+            <img src="pic/headerPic4_2.png">
+        </div>
+    </div>
+
+    <script>
+        let oContaner = document.querySelector('.container')
+        let oMirror = document.querySelector('.mirror')
+        let oBigImg = document.querySelector('.mirror img')
+        
+        document.addEventListener('mousemove',e =>{
+            const containerRect = oContaner.getBoundingClientRect();
+            const containerLeft = containerRect.left;
+            const containerTop = containerRect.top;
+            let dis_left = e.clientX - containerLeft;
+            let dis_top = e.clientY - containerTop;
+
+            oMirror.style.left=dis_left-(oMirror.offsetWidth/2)+'px'
+            oMirror.style.top=dis_top-(oMirror.offsetHeight/2)+'px'
+
+            oBigImg.style.left= -(dis_left-(oMirror.offsetWidth/2))+'px'
+            oBigImg.style.top= -(dis_top-(oMirror.offsetHeight/2))+'px'
+        })
+    </script>
+</body>
+</html>

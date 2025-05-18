@@ -61,12 +61,15 @@ h5{
 .products_box > h5 {
     width: 50%;
 }
-.products_box > button {
+.products_box > a {
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
     width: 25%;
     background-color: pink;
     border-radius: 25px;
     border: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 .products_list {

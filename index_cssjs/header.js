@@ -8,7 +8,7 @@ hamburgerMenu.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('active');
 });
 
-// 回到上方and header動畫
+// 回到上方&header動畫
 document.addEventListener('DOMContentLoaded', function() {
     const scrollTopBtn = document.getElementById("scrollTopBtn");
     const header = document.getElementById("header")
@@ -28,14 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
         behavior: "smooth"
         });
     });
+    // 頁面往下後header收起來
     function headerUp() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (document.body.scrollTop > 20) {
         header.style.transform="translateY(-50%)"
-        header.style.backgroundColor="#fff0"
         }
         else{
             header.style.transform=""
-            header.style.backgroundColor="#DEE4E9"
         }
     }
     // 偵測往上往下
@@ -43,10 +42,28 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('scroll',function(){
         const nowScroll =document.documentElement.scrollTop
         if(nowScroll<preScroll){
-            header.style.transform="none"
+            header.style.transform="translateY(20%)"
         }else if(nowScroll>preScroll){
-            header.style.transform="translateY(-65%)"
+            header.style.transform="translateY(-100%)"
         }
         preScroll=nowScroll
     })
 });
+
+let oContaner = document.querySelector('.container')
+let oMirror = document.querySelector('.mirror')
+let oBigImg = document.querySelector('.mirror img')
+
+document.addEventListener('mousemove',e =>{
+    const containerRect = oContaner.getBoundingClientRect();
+    const containerLeft = containerRect.left;
+    const containerTop = containerRect.top;
+    let dis_left = e.clientX - containerLeft;
+    let dis_top = e.clientY - containerTop;
+
+    oMirror.style.left=dis_left-(oMirror.offsetWidth/2)+'px'
+    oMirror.style.top=dis_top-(oMirror.offsetHeight/2)+'px'
+
+    oBigImg.style.left= -(dis_left-(oMirror.offsetWidth/2))+'px'
+    oBigImg.style.top= -(dis_top-(oMirror.offsetHeight/2))+'px'
+})

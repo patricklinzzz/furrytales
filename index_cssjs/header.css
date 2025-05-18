@@ -2,7 +2,7 @@
 #scrollTopBtn {
     display: none; 
     position: fixed;
-    bottom: 20px;
+    bottom: 54px;
     right: 20px;
     border: none;
     padding: 0px;
@@ -22,31 +22,33 @@ header {
     z-index: 8;
     background-color: #fff0;
     transition: 0.5s ease-in-out;
-}
-.banner {
-    height: 13%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
+}
+.banner {
+    margin-right: 20px;
+    width: 55% ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     position: relative;
-    padding: 10px;
     gap: 20px;
+    background-color: #95CEE8;
+    border-radius: 25px;
 }
 .logo {
     width: 150px;
 }
 .bannerMenu {
+    padding: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 10%;
     list-style: none;
-    padding: 0 25px;
-    /* background-color: #7A7A7A; */
     border-radius: 10px;
-    height: 43px;
-    width: 45%;
+    width: 70%;
 
 }
 .bannerMenu >li >a{
@@ -55,24 +57,22 @@ header {
     text-decoration: none;
 }
 .member {
-    background-color: #008AD8;
     display: flex;
     border-radius: 30px;
     gap: 20px;
     padding: 0px 10px;
     width: 128px;
-    height: 50px;
     justify-content: center;
     align-items: center;
     
 }
 .member i {
-    color: white;
+    color: #4477AA;
 }
 .banner_pic {
     width: 100%;
     position: relative;
-    top: -100px;
+    margin-top: -103px;
 }
 
 .hamburger-menu {
@@ -130,4 +130,27 @@ header {
 }
 .hamburger-menu.active .bar2:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
+}
+
+.container {
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    top: -45px;
+}
+.mirror  {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container img {
+    display: block;
+    width: 100vw;
+}
+.mirror img {
+    position: absolute;
 }
