@@ -28,15 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
         behavior: "smooth"
         });
     });
-    // 頁面往下後header收起來
-    function headerUp() {
-        if (document.body.scrollTop > 20) {
-        header.style.transform="translateY(-50%)"
-        }
-        else{
-            header.style.transform=""
-        }
-    }
     // 偵測往上往下
     let preScroll = 0
     document.addEventListener('scroll',function(){

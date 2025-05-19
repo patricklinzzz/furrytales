@@ -7,13 +7,15 @@ main {
 .titleCN {
     font-size: 24px;
 }
-
+.allbrands {
+    color: #FAC140;
+}
 /* 輪播圖 */
 .carousel-wrapper {
-    width: 100%;
-    margin: 20px 0 150px 0;
-    padding: 8px;
-    background-color:#DAD8D9;
+    width: 90%;
+    margin: 50px auto 150px auto;
+    padding: 5px;
+    background-color:#fac2408c;
     box-shadow: 20px 20px 10px  rgba(0,0,0,0.5);
 }
 
@@ -39,6 +41,7 @@ main {
     position: relative;
 }
 .trending_title {
+    color: #F19C97;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -66,7 +69,7 @@ h5{
     text-align: center;
     text-decoration: none;
     width: 25%;
-    background-color: pink;
+    background-color: #F19C97;
     border-radius: 25px;
     border: none;
     color: rgb(255, 255, 255);
@@ -200,10 +203,10 @@ h5{
     padding: 5px;
     margin: 10px;
     font-size: 20px;
-    color: #000;
+    color: #ffffff;
     z-index: 99;
     cursor: pointer;
-    background-color: #FFC0CB;
+    background-color: #000000;
 }
 .news_bar {
     margin-top: 20px;

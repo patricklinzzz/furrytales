@@ -25,6 +25,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    transform: translateY(20%)
 }
 .banner {
     margin-right: 20px;
@@ -35,7 +36,7 @@ header {
     align-items: center;
     position: relative;
     gap: 20px;
-    background-color: #95CEE8;
+    background-color: #2FB6D3;
     border-radius: 25px;
 }
 .logo {
@@ -56,6 +57,10 @@ header {
     font-size: 14px;
     text-decoration: none;
 }
+.bannerMenu >li >a:hover {
+    color: #FAC140;
+
+}
 .member {
     display: flex;
     border-radius: 30px;
@@ -67,7 +72,10 @@ header {
     
 }
 .member i {
-    color: #4477AA;
+    color: #ffe;
+}
+.member i:hover {
+    color: #F19C97;
 }
 .banner_pic {
     width: 100%;
@@ -136,7 +144,7 @@ header {
     margin: auto;
     position: relative;
     overflow: hidden;
-    top: -45px;
+    top: -55px;
 }
 .mirror  {
     width: 180px;
@@ -155,4 +163,7 @@ header {
 .mirror img {
     position: absolute;
     transition: 0.5s linear;
+}
+.products_box>a:hover,#right:hover,#left:hover {
+    scale: 1.5;
 }
