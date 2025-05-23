@@ -1,7 +1,25 @@
+.footer_bg {
+    width: 100%;
+    vertical-align: middle;
+}
 footer {
-    background-color: white;
-    border-top: 1px solid;
-    white-space: nowrap;
-    padding-left: 15px;
-    
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.info {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    display: flex;
+    align-items: flex-end;
+    gap: 14%;
+}
+.info p {
+    width: 100%;
+    display: flex;
+    color: aliceblue;
+}
+.info a {
+    margin:0 2%;
 }

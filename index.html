@@ -3,259 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furry Tales</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha 1 512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpol 2 icy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index_cssjs/footer.css">
-    <link rel="stylesheet" href="index_cssjs/header.css">
-    <link rel="stylesheet" href="index_cssjs/main.css">
-    <style>
-        body {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            font-family: "Cal Sans", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            /* background-color: #fff; */
-            background-image: url(pic/bg3.jpg);
-            background-position: 0 -100px;
-        }
-    </style>
+    <link rel="stylesheet" href="/index_cssjs/header.css">
+    <link rel="stylesheet" href="/index_cssjs/main.css">
+    <link rel="stylesheet" href="/index_cssjs/footer.css">
+    <title>Document</title>
 </head>
 <body>
     <button id="scrollTopBtn" title="回到頂部">
-        <img src="pic/top.png" alt="" width="40">
+        <img src="pic/top.png" alt="" width="70">
     </button>
 
-    <header id="header">
-        <div class="banner">
-            <ul class="bannerMenu" id="bannerMenu">
+    <header>
+        <div class="navbar">
+            <img src="pic/logo3.png" alt="" width="114" class="logo">
+            <ul class="main_nav">
                 <li><a href="">產品資訊</a></li>
-                <li><a href=""> 寵物專欄</a></li>
+                <li><a href="">寵物專欄</a></li>
                 <li><a href="">服務介紹</a></li>
                 <li><a href="">關於我們</a></li>
             </ul>
-            <div class="hamburger-menu" id="hamburgerMenu">
-                <div class="bar2"></div>
-                <div class="bar2"></div>
-                <div class="bar2"></div>
-            </div>
             <div class="member">
                 <a href="./login.html"><i class="fa-solid fa-user"></i></a>
                 <a href=""><i class="fa-solid fa-heart"></i></a>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>                
             </div>
         </div>
     </header>
-    <div class="container">
-        <img src="pic/headerPic4.jpg" width="100%">
-        <div class="mirror">
-            <img src="pic/headerPic4_2.png" draggable="false">
-        </div>
-    </div>
-    <!-- <img src="pic/headerPic4.jpg" alt="" class="banner_pic"> -->
-    <a href="/index.html" style="position: absolute;top: 10px;left: 30px; z-index: 9;"><img src="pic/logo.png" alt="" class="logo">
-    </a>
+    <img src="pic/header_bg.png" alt="" class="header_bg">
     <main>
-        <div class="allbrands">
-            <div class="titleEN">
-                <strong>All Brands</strong>
-            </div>
-            <div class="titleCN">
-                <strong>所有品牌</strong>
-            </div>
-            <div class="carousel-wrapper"> 
-                <div class="carousel-container">
-                    <div class="carousel-slide">
-                        <img src="pic/all_brands/1.png" alt="">
-                        <img src="pic/all_brands/2.png" alt="">
-                        <img src="pic/all_brands/3.png" alt="">
-                        <img src="pic/all_brands/4.png" alt="">
-                        <img src="pic/all_brands/5.png" alt="">
-                        <img src="pic/all_brands/6.png" alt="">
-                        <img src="pic/all_brands/7.png" alt="">
-                        <img src="pic/all_brands/8.png" alt="">
-                        <img src="pic/all_brands/1.png" alt="">
-                        <img src="pic/all_brands/2.png" alt="">
-                        <img src="pic/all_brands/3.png" alt="">
-                        <img src="pic/all_brands/4.png" alt="">
-                        <img src="pic/all_brands/5.png" alt="">
-                        <img src="pic/all_brands/6.png" alt="">
-                        <img src="pic/all_brands/7.png" alt="">
-                        <img src="pic/all_brands/8.png" alt="">
-                    </div>
-                </div>
-            </div>
+        <div class="title" id="pro_title">
+            <strong class="title_ch">熱門產品</strong>
+            <strong class="title_en">Trending Products</strong>
         </div>
-
-        <div class="trending">
-            <div class="trending_title">
-                <div class="titleEN">
-                    <strong>Trending Products</strong>
-                </div>
-                <div class="titleCN">
-                    <strong>熱門產品</strong>
-                </div>
-            </div>
-            <div class="products_box">
-                    <h1>McAdams</h1>
-                    <h5>The only pet food made using whole British free-range chicken from RSCPA approved UK farms. Meat-meal and grain free with added fruits, vegetables and herbs, oven baked to preserve nutrients. Each pack of McAdams sold in the UK will support the RSPCA’s vital work. McAdams have pledged a minimum of £80,000 to the RSPCA in the first year of their partnership.</h5>
-                    <a href="">BUY</a>
-                    <div class="products_list">
-                        <div class="product">
-                            <img src="pic/tre_prd/1.png" alt="" width="80">
-                            <div class="details">
-                                <h5>Sensitive Free Range Turkey Small Breed Dog</h5>
-                                <span>£28.99</span>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <img src="pic/tre_prd/1.png" alt="" width="80">
-                            <div class="details">
-                                <h5>Sensitive Free Range Turkey Small Breed Dog</h5>
-                                <span>£28.99</span>
-                            </div>
+        <div class="tre_prod">
+            <div class="products">
+                <h1>McAdams</h1>
+                <h5>The only pet food made using whole British free-range chicken from RSCPA approved UK farms. Meat-meal and grain free with added fruits, vegetables and herbs, oven baked to preserve nutrients.</h5>
+                <a href="">BUY</a>
+                <div class="products_list">
+                    <div class="product">
+                        <img src="pic/tre_prd/1.png" alt="" width="80">
+                        <div class="details">
+                            <h5>Sensitive Free Range Turkey Small Breed Dog</h5>
+                            <span>£28.99</span>
                         </div>
                     </div>
-            </div>         
-            <img class="McAdams_pic" src="pic/tre_prd/McAdams.jpg" alt="">   
-            <!-- <div class="products_list">
-                <div class="product">
-                    <img src="pic/tre_prd/1.png" alt="">
-                    <span>McAdams</span>
-                    <span>McAdams Sensitive Free Range Turkey Small Breed Dog</span>
-                    <span>$XXX</span>
-                </div>
-                <div class="product">
-                    <img src="pic/tre_prd/2.png" alt="">
-                    <span>McAdams</span>
-                    <span>McAdams Sensitive Free Range Turkey Small Breed Dog</span>
-                    <span>$XXX</span>
-                </div>
-                <div class="product">
-                    <img src="pic/tre_prd/3.png" alt="">
-                    <span>McAdams</span>
-                    <span>McAdams Sensitive Free Range Turkey Small Breed Dog</span>
-                    <span>$XXX</span>
-                </div>
-                <div class="product">
-                    <img src="pic/tre_prd/4.png" alt="">
-                    <span>McAdams</span>
-                    <span>McAdams Sensitive Free Range Turkey Small Breed Dog</span>
-                    <span>$XXX</span>
-                </div>
-                <div class="product">
-                    <img src="pic/tre_prd/5.png" alt="">
-                    <span>McAdams</span>
-                    <span>McAdams Sensitive Free Range Turkey Small Breed Dog</span>
-                    <span>$XXX</span>
-                </div>
-            </div>
-            <div class="products_more">
-                <a href="">More</a>
-            </div> -->
-        </div>
-
-        <div class="ad">
-            <div class="ad_img">
-                ad
-            </div>
-            <div class="ad_products">
-
-            </div>
-        </div>
-
-        <div class="pet_basics">
-            <div class="titleEN">
-                <strong>Pet Basics</strong>
-            </div>
-            <div class="titleCN">
-                <strong>寵物基礎知識</strong>
-            </div>
-            <div class="LR">
-                <i class="fa-solid fa-chevron-up" style="transform:rotate(270deg);" id="right"></i><i class="fa-solid fa-chevron-up" style="transform:rotate(90deg);" id="left"></i>
-            </div>
-            <div class="news_ctrl">
-                <div class="news_bar">
-                    <div class="news">
-                        <span style="background-image:url(pic/pet_basics/happydog.jpg)" >
-                            <h4>了解犬類行為：快樂的訊號</h4>
-                            <h6>狗狗透過肢體語言與我們溝通。搖尾巴通常表示快樂，但也要注意牠們的整體姿態。放鬆的身體、輕輕擺動的尾巴和友善的眼神都是狗狗開心的表現。</h6>
-                            <a href="">Read More</a>
-                        </span>
-                        <span style="background-image:url(pic/pet_basics/cat.jpg)" >
-                            <h4>解讀貓咪語言：好奇的眼神</h4>
-                            <h6>貓咪的眼睛能透露很多訊息。當貓咪好奇或感興趣時，牠們的瞳孔可能會放大，並專注地盯著目標。緩慢地眨眼通常是貓咪表示信任和放鬆的方式。</h6>
-                            <a href="">Read More</a>
-                        </span>
-                        <span style="background-image:url(pic/pet_basics/bird.jpg)" >
-                            <h4>鳥類的溝通：豐富的鳴叫</h4>
-                            <h6>鳥類透過鳴叫和肢體動作進行交流。不同種類的鳴叫可能有不同的含義，例如呼喚、警告或求偶。觀察牠們的羽毛和姿勢也能幫助我們了解牠們的情緒。</h6>
-                            <a href="">Read More</a>
-                        </span>
-                        <span style="background-image:url(pic/pet_basics/happydog.jpg)" >
-                            <h4>了解犬類行為：快樂的訊號</h4>
-                            <h6>狗狗透過肢體語言與我們溝通。搖尾巴通常表示快樂，但也要注意牠們的整體姿態。放鬆的身體、輕輕擺動的尾巴和友善的眼神都是狗狗開心的表現。</h6>
-                            <a href="">Read More</a>
-                        </span>
-                        <span style="background-image:url(pic/pet_basics/cat.jpg)" >
-                            <h4>解讀貓咪語言：好奇的眼神</h4>
-                            <h6>貓咪的眼睛能透露很多訊息。當貓咪好奇或感興趣時，牠們的瞳孔可能會放大，並專注地盯著目標。緩慢地眨眼通常是貓咪表示信任和放鬆的方式。</h6>
-                            <a href="">Read More</a>
-                        </span>
-                        <span style="background-image:url(pic/pet_basics/bird.jpg)" >
-                            <h4>鳥類的溝通：豐富的鳴叫</h4>
-                            <h6>鳥類透過鳴叫和肢體動作進行交流。不同種類的鳴叫可能有不同的含義，例如呼喚、警告或求偶。觀察牠們的羽毛和姿勢也能幫助我們了解牠們的情緒。</h6>
-                            <a href="">Read More</a>
-                        </span>
+                    <div class="product">
+                        <img src="pic/tre_prd/1.png" alt="" width="80">
+                        <div class="details">
+                            <h5>Sensitive Free Range Turkey Small Breed Dog</h5>
+                            <span>£28.99</span>
+                        </div>
                     </div>
                 </div>
-
             </div>
+            <img src="pic/tre_prd/McAdams.png" alt="" class="McAdams_bg">
         </div>
-
+        <img src="pic/tre_prd/bg.png" alt="" class="tre_prod_bg">
+        <div class="basic">
+            <div class="title" id="basic_title">
+                <strong class="title_ch">寵物基礎知識</strong>
+                <strong class="title_en">Pet Basics</strong>
+            </div>
+            <div class="pet_basics">
+                <div class="LR">
+                    <i class="fa-solid fa-chevron-up" style="transform:rotate(270deg);" id="right"></i><i class="fa-solid fa-chevron-up" style="transform:rotate(90deg);" id="left"></i>
+                </div>
+                <div class="news_ctrl">
+                    <div class="news_bar">
+                        <div class="news">
+                            <span style="background-image:url(pic/pet_basics/happydog.jpg)" >
+                                <h4>了解犬類行為：快樂的訊號</h4>
+                                <h6>狗狗透過肢體語言與我們溝通。搖尾巴通常表示快樂，但也要注意牠們的整體姿態。放鬆的身體、輕輕擺動的尾巴和友善的眼神都是狗狗開心的表現。</h6>
+                                <a href="">Read More</a>
+                            </span>
+                            <span style="background-image:url(pic/pet_basics/cat.jpg)" >
+                                <h4>解讀貓咪語言：好奇的眼神</h4>
+                                <h6>貓咪的眼睛能透露很多訊息。當貓咪好奇或感興趣時，牠們的瞳孔可能會放大，並專注地盯著目標。緩慢地眨眼通常是貓咪表示信任和放鬆的方式。</h6>
+                                <a href="">Read More</a>
+                            </span>
+                            <span style="background-image:url(pic/pet_basics/bird.jpg)" >
+                                <h4>鳥類的溝通：豐富的鳴叫</h4>
+                                <h6>鳥類透過鳴叫和肢體動作進行交流。不同種類的鳴叫可能有不同的含義，例如呼喚、警告或求偶。觀察牠們的羽毛和姿勢也能幫助我們了解牠們的情緒。</h6>
+                                <a href="">Read More</a>
+                            </span>
+                            <span style="background-image:url(pic/pet_basics/happydog.jpg)" >
+                                <h4>了解犬類行為：快樂的訊號</h4>
+                                <h6>狗狗透過肢體語言與我們溝通。搖尾巴通常表示快樂，但也要注意牠們的整體姿態。放鬆的身體、輕輕擺動的尾巴和友善的眼神都是狗狗開心的表現。</h6>
+                                <a href="">Read More</a>
+                            </span>
+                            <span style="background-image:url(pic/pet_basics/cat.jpg)" >
+                                <h4>解讀貓咪語言：好奇的眼神</h4>
+                                <h6>貓咪的眼睛能透露很多訊息。當貓咪好奇或感興趣時，牠們的瞳孔可能會放大，並專注地盯著目標。緩慢地眨眼通常是貓咪表示信任和放鬆的方式。</h6>
+                                <a href="">Read More</a>
+                            </span>
+                            <span style="background-image:url(pic/pet_basics/bird.jpg)" >
+                                <h4>鳥類的溝通：豐富的鳴叫</h4>
+                                <h6>鳥類透過鳴叫和肢體動作進行交流。不同種類的鳴叫可能有不同的含義，例如呼喚、警告或求偶。觀察牠們的羽毛和姿勢也能幫助我們了解牠們的情緒。</h6>
+                                <a href="">Read More</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="pic/pet_basics/bg.png" alt="" class="basic_bg">
+        </div>
         <div class="instore">
-            <div class="titleEN">
-                <strong>In-store Service</strong>
+            <div class="title" id="instore_title">
+                <strong class="title_ch">門市服務</strong>
+                <strong class="title_en">In-store Service</strong>
             </div>
-            <div class="titleCN">
-                <strong>門市服務</strong>
-            </div>
-            <div class="service_title">
-                <strong></strong>
-            </div>
-            <div class="instore_service">
-                <div class="box">
-                    <div class="loader_box" >
-                        <div class="loader"></div>
-                        <img class="pic" src="pic/service/wash.png" alt="">            
-                    </div>
+            <div class="instore_main">
+                <div class="service_title">
+                    <strong></strong>
                 </div>
-                <div class="box">
-                    <div class="loader_box" >
-                        <div class="loader"></div>
-                        <img class="pic" src="pic/service/vet.png" alt="">            
+                <div class="instore_service">
+                    <div class="box">
+                        <div class="loader_box" >
+                            <div class="loader"></div>
+                            <img class="pic" src="pic/service/wash.png" alt="">            
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <div class="loader_box" >
-                        <div class="loader"></div>
-                        <img class="pic" src="pic/service/hotel.png" alt="">            
+                    <div class="box">
+                        <div class="loader_box" >
+                            <div class="loader"></div>
+                            <img class="pic" src="pic/service/vet.png" alt="">            
+                        </div>
                     </div>
+                    <div class="box">
+                        <div class="loader_box" >
+                            <div class="loader"></div>
+                            <img class="pic" src="pic/service/hotel.png" alt="">            
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            <img src="pic/service/grass.png" alt="" class="grass">
+            <img src="pic/service/bg.png" alt="" class="service_bg">
         </div>
+
     </main>
     <footer>
-        <p>&copy;2025 FurryTales.All Rights Reserved.</p>
+        <img src="pic/footer.png" alt="" class="footer_bg">
+        <div class="info">
+            <p>&copy;2025 FurryTales.All Rights Reserved.</p>
+            <p style="letter-spacing: 1px;">地址:320桃園市中壢區復興路46號9樓 <br>電話:0412345678 <br>電子信箱:yqgwfs@eliotkids.com <br>營業時間:24h</p>
+            <p><a href="#" onclick="alert('沒有FB');return false">
+                    <i class="fa-brands fa-square-facebook" style="color: #47a1e6; font-size:38px;"></i>
+                </a>
+                <a href="" onclick="alert('沒有IG');return false">
+                    <i class="fa-brands fa-instagram" style="color: #fe056d;font-size:40px;"></i>
+                </a>
+            </p>
+        </div>
     </footer>
-    <script src="index_cssjs/header.js"></script>
     <script src="index_cssjs/main.js"></script>
+    <script src="index_cssjs/header.js"></script>
 </body>
 </html>

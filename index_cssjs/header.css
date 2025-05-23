@@ -1,3 +1,7 @@
+body {
+    padding: 0;
+    margin: 0;
+}
 /* 回到上方 */
 #scrollTopBtn {
     display: none; 
@@ -15,155 +19,59 @@
 #scrollTopBtn:hover {
     opacity: 1;
 }
+
 header {
     width: 100%;
     position: sticky;
-    top: 0;
-    z-index: 8;
-    background-color: #fff0;
+    top: 0%;
+    z-index: 9;
+    margin-bottom: -9%;
     transition: 0.5s ease-in-out;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    transform: translateY(20%)
 }
-.banner {
-    margin-right: 20px;
-    width: 55% ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    gap: 20px;
-    background-color: #2FB6D3;
-    border-radius: 25px;
-}
-.logo {
-    width: 150px;
-}
-.bannerMenu {
-    padding: 0;
+.navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    list-style: none;
-    border-radius: 10px;
-    width: 70%;
-
+    width: 100%;
 }
-.bannerMenu >li >a{
-    color: #000000;
-    font-size: 14px;
+.header_bg {
+    width: 100%;
+    /* position: absolute; */
+    top: 0;
+    z-index: -1;
+}
+.main_nav a{
     text-decoration: none;
+    color: #262642;
+    font-size: 1em;
+    font-weight: bold;
 }
-.bannerMenu >li >a:hover {
-    color: #FAC140;
-
-}
-.member {
-    display: flex;
+.main_nav {
+    display:flex;
+    gap: 50px;
+    background-color:#FFF7F7;
+    border: 3px solid #505050;
     border-radius: 30px;
-    gap: 20px;
-    padding: 0px 10px;
-    width: 128px;
-    justify-content: center;
-    align-items: center;
+    padding: 1% 2%;
+    list-style: none;
     
 }
-.member i {
-    color: #ffe;
+.main_nav li:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #E8368E;
 }
-.member i:hover {
-    color: #F19C97;
+.member{
+    display: flex;
+    gap: 30px;
+    background-color: #E8368E;
+    border-radius: 60px;
+    padding: 14px 19px;
+    border: 3px solid #505050;
 }
-.banner_pic {
-    width: 100%;
-    position: relative;
-    margin-top: -103px;
+.member >a >i {
+    color: #fff;
 }
-
-.hamburger-menu {
-    display: none; /* 預設隱藏漢堡選單圖示 */
-    flex-direction: column;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 0.375rem;
-    border: 2px solid #7A7A7A;
-}
-.hamburger-menu .bar2 {
-    width: 25px;
-    height: 3px;
-    background-color: #7A7A7A;
-    margin: 3px 0; /* 線條間距 */
-    transition: all 0.3s ease-in-out; /* 動畫效果 */
-}
-@media (max-width:811px){
-    .bannerMenu{
-        display: none;
-        flex-direction: column;
-        justify-content: flex-start;
-        position: absolute;
-        top: 100%;
-        left: 35%;
-        padding:10px;
-        width: 20%;
-        background-color: #7A7A7A;
-        border-radius:0 0 25px 25px;
-        margin: 5px;
-        height: auto;
-    }
-    .bannerMenu li {
-        width: 100%;
-        text-align: center;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #F5F5F5;
-        max-width: 100%;
-    }
-    .bannerMenu li:last-child {
-        border-bottom: none;
-    }
-    .hamburger-menu{
-        display: flex;
-    }
-    .bannerMenu.active {
-        display: flex; /* 當 active class 存在時顯示選單 */
-    }
-}
-.hamburger-menu.active .bar2:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-}
-.hamburger-menu.active .bar2:nth-child(2) {
-    opacity: 0;
-}
-.hamburger-menu.active .bar2:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-}
-
-.container {
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    top: -55px;
-}
-.mirror  {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s linear;
-}
-.container img {
-    display: block;
-    width: 100vw;
-}
-.mirror img {
-    position: absolute;
-    transition: 0.5s linear;
-}
-.products_box>a:hover,#right:hover,#left:hover {
-    scale: 1.5;
+.member >a >i:hover {
+    color:#262642;
+    transition: 0.3s ease-in-out;
 }

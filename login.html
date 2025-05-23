@@ -7,10 +7,27 @@
     <link rel="stylesheet" href="./login_cssjs/login.css">
 </head>
 <body>
-    <a href="./index.html"><img src="./pic/logo.png" alt="" ></a>
-    <div class="login">
-        <input type="email" name="帳號" id="account" placeholder="Username">
-        <button type="submit" id="continue">繼續</button>
+    <div class="login_box">
+        <a href="./index.html">
+        <img src="pic/logo3.png" alt="" width="120"></a>
+        <form action="" method="post">
+            <div class="input_box">
+                <input type="email" name="email" id="email" placeholder="E-Mail">
+                <input type="password" name="pw" id="pw" placeholder="Password">
+                <div class="rmd_fg">
+                    <div class="rmb">
+                        <input type="checkbox" name="rmb" id="rmb">
+                        <label for="rmb">記住密碼</label>
+                    </div>
+                    <a href="">忘記密碼?</a>
+                </div>
+            </div>
+            <div class="btm_box">
+                <input type="button" value="登入"  onclick="window.location.href='/index.html'">
+                <div style="cursor: default;">or</div>
+                <input type="button" value="建立帳號">
+            </div>
+        </form>
     </div>
 </body>
 </html>
