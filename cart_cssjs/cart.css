@@ -1,0 +1,99 @@
+main {
+    display: flex;
+    width: 70%;
+    margin: 0 auto 5em auto;
+    gap: 3em;
+}
+main >div{
+    flex: 1;
+}
+.address, .remark ,.pay{
+    display: flex;
+    flex-direction: column;
+}
+.personal_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.nameAndnumber >div {
+    display: flex;
+    flex-direction: column;
+}
+.nameAndnumber {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input {
+    border: 1px solid #ccc;
+    height: 2.5em;
+    border-radius: 10px;
+}
+.remark textarea {
+    height: 10em;
+    resize: none;
+    border-radius: 10px;
+    padding: 1em;
+}
+.payment-option {
+    display: flex;
+    align-items: center;
+}
+.personal_info >a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    background-color: #E8368E;
+    text-align: center;
+    line-height: 3em;
+    align-items: center;
+    height: 3em;
+    border-radius: 15px;
+}
+.personal_info i {
+    font-size: 2em;
+}
+.radio-icon {
+    margin-right: 1em;
+}
+h1 {
+    margin: 0;
+}
+.cart_details {
+    display: flex;
+    flex-direction: column;
+}
+.cart_details >div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item p:nth-of-type(1) {
+    width: 60%;
+}
+.coupons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    margin: 1em 0;
+}
+.coupons >input{
+    width: 60%;
+}
+.coupons >button {
+    color: #fff;
+    background-color: #E8368E;
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 0 1em;
+    cursor: pointer;
+}
+.totalPrice {
+    border-top: 1px solid;
+}

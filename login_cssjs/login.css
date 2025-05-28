@@ -17,7 +17,6 @@ body {
     align-items: center;
     width: 30%;
     height: 70%;
-    gap: 20px;
     background: radial-gradient(#ffffffcc 50%,#ffffffaa 90%);
     border: 3px solid;
     border-radius: 36px;
@@ -32,7 +31,6 @@ form {
 .input_box {
     display: flex;
     flex-direction: column;
-    gap:15px;
 }
 .input_box input {
     padding: 8px 16px;

@@ -1,0 +1,65 @@
+main img {
+    width: 100%;
+}
+.banner {
+    position: relative;
+}
+.banner h1{
+    letter-spacing: 1em;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+.banner h3{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 45%;
+    left: 15%;
+}
+.nav {
+    position: sticky;
+    top: 25%;
+    width:fit-content;
+    margin-left: 2em;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.nav ul{
+    margin: 1em;
+    padding: 0;
+    list-style: none;
+}
+.nav ul li {
+    margin: 1em 0;
+    cursor: pointer;
+}
+.nav ul li:hover {
+    color: #F5DF4D;
+}
+.learn_animals,.feeding_management,.health_care,.behavioral_training {
+    width: 66.5%;
+    margin: auto;
+}
+main > div>div >p:nth-child(1){
+    font-size: 3em;
+    font-weight: bold;
+}
+.article {
+    display: flex;
+    flex-wrap: wrap;
+}
+.article div {
+    width: 50%;
+    position: relative;
+}
+.article div button {
+    position: absolute;
+    right: 8%;
+    bottom: 8%;
+    background-color:#E8368E;
+    color: #fff;
+    border: 2px solid #272727;
+    border-radius: 15px;
+    padding:0.5em 1em;
+    cursor: pointer;
+}

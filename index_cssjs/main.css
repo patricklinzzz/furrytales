@@ -1,7 +1,3 @@
-body {
-    padding: 0;
-    margin: 0;
-}
 main {
     position: relative;
 }
@@ -20,11 +16,11 @@ main {
     font-size: 48px;
     letter-spacing: 10px;
 }
-.title_en {
+/* .title_en {
     color: #8E8EAD;
     font-size: 36px;
     letter-spacing: 10px;
-}
+} */
 .tre_prod {
     display: flex;
     flex-direction: column;
@@ -36,7 +32,7 @@ main {
 .tre_prod_bg {
     width: 100%;
     position: absolute;
-    top: 5%;
+    top: 0;
     z-index: -2;
     transition: 1s ease-in-out;
 }
@@ -45,7 +41,7 @@ main {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 45px;
 }
 h5{
     margin: 0;
@@ -118,7 +114,7 @@ h5{
 .basic_bg {
     width: 100%;
     position: absolute;
-    top: -11%;
+    top: -23%;
     z-index: -2;
     transition: 1s ease-in-out;
 }
@@ -207,7 +203,7 @@ h5{
 .service_bg {
     transition: 1s ease-in-out;
     position: absolute;
-    top: 25%;
+    top: 20%;
     width: 100%;
     margin-top: -10%;
     z-index: -2;
@@ -223,7 +219,7 @@ h5{
 .instore {
     margin-top: 20%;
     position: relative;
-    margin-bottom: 35%;
+    margin-bottom: 30%;
 }
 .instore_main {
     width: 62.5%;

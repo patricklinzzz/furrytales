@@ -9,10 +9,13 @@
 <body>
     <div class="login_box">
         <a href="./index.html">
-        <img src="pic/logo3.png" alt="" width="120"></a>
+            <img src="pic/logo3.png" alt="" width="120">
+        </a>
         <form action="" method="post">
             <div class="input_box">
+                <label for="email">電子信箱</label>
                 <input type="email" name="email" id="email" placeholder="E-Mail">
+                <label for="pw">密碼</label>
                 <input type="password" name="pw" id="pw" placeholder="Password">
                 <div class="rmd_fg">
                     <div class="rmb">
@@ -25,7 +28,7 @@
             <div class="btm_box">
                 <input type="button" value="登入"  onclick="window.location.href='/index.html'">
                 <div style="cursor: default;">or</div>
-                <input type="button" value="建立帳號">
+                <input type="button" value="建立帳號" onclick="window.location.href='/register.html'">
             </div>
         </form>
     </div>

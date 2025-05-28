@@ -25,7 +25,6 @@ header {
     position: sticky;
     top: 0%;
     z-index: 9;
-    margin-bottom: -9%;
     transition: 0.5s ease-in-out;
 }
 .navbar {
@@ -36,8 +35,7 @@ header {
 }
 .header_bg {
     width: 100%;
-    /* position: absolute; */
-    top: 0;
+    
     z-index: -1;
 }
 .main_nav a{
