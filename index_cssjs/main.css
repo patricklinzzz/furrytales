@@ -1,5 +1,6 @@
 main {
     position: relative;
+    top: -230px;
 }
 #pro_title {
     transition: 1s ease-in-out;
@@ -16,11 +17,6 @@ main {
     font-size: 48px;
     letter-spacing: 10px;
 }
-/* .title_en {
-    color: #8E8EAD;
-    font-size: 36px;
-    letter-spacing: 10px;
-} */
 .tre_prod {
     display: flex;
     flex-direction: column;

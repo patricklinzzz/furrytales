@@ -105,11 +105,21 @@ nav li {
 .specification div{
     display: flex;
     gap: 5px;
+    
 }
 .specification div p {
     border: 1px solid;
     padding: 5px;
     border-radius: 10px;
+    cursor: pointer;
+}
+.specification div input {
+    display: none;
+}
+.lb3_5:has(input:checked) > .sl1,
+.lb12:has(input:checked) > .sl2,
+.lb22:has(input:checked) > .sl3 {
+    background-color: #ccc;
 }
 .buy {
     border:1px solid;

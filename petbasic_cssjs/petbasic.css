@@ -19,10 +19,13 @@ main img {
 .nav {
     position: sticky;
     top: 25%;
-    width:fit-content;
     margin-left: 2em;
-    border: 1px solid;
     border-radius: 10px;
+    height: fit-content;
+    flex-basis: 30%;
+    background-color: #efefef64;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px 1px #0000004a;
 }
 .nav ul{
     margin: 1em;
@@ -34,13 +37,15 @@ main img {
     cursor: pointer;
 }
 .nav ul li:hover {
-    color: #F5DF4D;
+    color: #ae9f39;
+    scale: 1.2;
+    transform-origin: 0 50%;
 }
 .learn_animals,.feeding_management,.health_care,.behavioral_training {
     width: 66.5%;
     margin: auto;
 }
-main > div>div >p:nth-child(1){
+main > div>div>div >p:nth-child(1){
     font-size: 3em;
     font-weight: bold;
 }
@@ -62,4 +67,7 @@ main > div>div >p:nth-child(1){
     border-radius: 15px;
     padding:0.5em 1em;
     cursor: pointer;
+}
+main>div {
+    display: flex;
 }
