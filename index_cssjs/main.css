@@ -45,8 +45,6 @@ h5{
 .products > h5,.products > h1 {
     width: fit-content;
     margin: 0;
-    padding: 5px;
-    background-color: #ffffffb2;
     letter-spacing: 1px;
 }
 .products > h5 {
@@ -71,7 +69,7 @@ h5{
 .McAdams_bg {
     position: absolute;
     top: 20%;
-    right: -13%;
+    right: -20%;
     z-index: -1;
     width: 90%;
 }
@@ -191,6 +189,7 @@ h5{
     text-decoration: none;
     height: 30px;
     line-height: 30px;
+    font-weight: bold;
 }
 
 #instore_title {

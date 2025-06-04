@@ -59,14 +59,16 @@ main > div>div>div >p:nth-child(1){
 }
 .article div button {
     position: absolute;
+    height: 2.3em;
     right: 8%;
     bottom: 8%;
     background-color:#E8368E;
     color: #fff;
-    border: 2px solid #272727;
+    border: 0;
     border-radius: 15px;
     padding:0.5em 1em;
     cursor: pointer;
+    font-weight: bold;
 }
 main>div {
     display: flex;
